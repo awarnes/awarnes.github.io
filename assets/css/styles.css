@@ -83,7 +83,7 @@ header > div {
 
 @media (min-width:1200px) {
   #profile-picture {
-    height:700px;
+    margin-left:100px;
   }
 }
 
