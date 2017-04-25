@@ -81,3 +81,9 @@ header > div {
   color:rgb(211,205,205);
 }
 
+@media (min-width:1200px) {
+  #profile-picture {
+    height:700px;
+  }
+}
+
