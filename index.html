@@ -1,519 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Freelancer - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-bio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">AWARNES</a>
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="csmModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">5e Character Sheet Manager</h4></div>
+                <div class="modal-body">
+                    <div class="carousel slide" data-ride="carousel" data-interval="4000" id="carousel-1">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item"><img src="assets/img/CSM/admin screen.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(68,58,58);">
+                                    <h3>The Admin Site</h3>
+                                    <p>Used to administer the database</p>
+                                </div>
+                            </div>
+                            <div class="item"><img src="assets/img/CSM/search collapsed.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(68,58,58);">
+                                    <h3>Search the Database</h3>
+                                    <p>You can search the database and collapse sections that don't pertain to your search.</p>
+                                </div>
+                            </div>
+                            <div class="item active"><img src="assets/img/CSM/spell modal.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(231,219,219);">
+                                    <h3>Informational Modals</h3>
+                                    <p>Get information quickly with modals.</p>
+                                </div>
+                            </div>
+                            <div class="item"><img src="assets/img/CSM/spell details.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(68,58,58);">
+                                    <h3>Open Details</h3>
+                                    <p>Using AJAX calls to the database you can get detailed information quickly and when you need it.</p>
+                                </div>
+                            </div>
+                            <div class="item"><img src="assets/img/CSM/choose equipment.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(68,58,58);">
+                                    <h3>Choosing Equipment</h3>
+                                    <p>During character creation menus are available to choose equipment, which is then stored in your character's inventory.</p>
+                                </div>
+                            </div>
+                            <div class="item"><img src="assets/img/CSM/character accept.png" alt="Slide Image">
+                                <div class="carousel-caption" style="color:rgb(68,58,58);">
+                                    <h3>Accept Your Character</h3>
+                                    <p>Once you've created a character you can review all your choices and choose to save or delete them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div><a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-1" role="button"
+                            data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-1" data-slide-to="4"></li>
+                            <li data-target="#carousel-1" data-slide-to="5"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center">The 5th Edition Character Sheet Manager is a pet project whose aim is to take the pain out of Dungeons &amp; Dragons, while still affording the player all of the creativity that the game is based on. </p>
+                    <p class="text-center">The 5E CSM is built in Django with a bed of Python, and plenty of JavaScript and JQuery to interact with the database through a built-in REST-ful API. </p>
+                    <p class="text-center">Check out the code on github <a href="https://github.com/awarnes/5E-Character" target="_blank">here </a>!</p>
+                    <p class="text-center">Languages and Features:&nbsp;<strong>Django, Python, JS, JQ, RESTful API</strong> Date: <strong>April 2017</strong> Service: <strong>Web Development</strong> </p>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="cursesModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: rgb(211,205,205)"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">TwitterMaze </h4></div>
+                <div class="modal-body">
+                    <div class="carousel slide" data-ride="carousel" data-interval="4000" id="carousel-1">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img class="img-rounded img-responsive" src="assets/img/TwitterMaze/title screen.png" alt="Title Screen" style="width:870px;height:490px;"></div>
+                            <div class="item"><img class="img-rounded img-responsive" src="assets/img/TwitterMaze/game 1.png" alt="Game Screen" style="width:870px;height:490px;"></div>
+                            <div class="item"><img class="img-rounded img-responsive" src="assets/img/TwitterMaze/final screen 2.png" alt="Final Screen" style="width:870px;height:490px;"></div>
+                            <div class="item"><img class="img-rounded img-responsive" src="assets/img/TwitterMaze/twitter_api.png" alt="API Interfacing" style="width:870px;height:490px;"></div>
+                            <div class="item"><img class="img-rounded img-responsive" src="assets/img/TwitterMaze/curses.png" alt="Curses Programming" style="width:870px;height:490px;"></div>
+                        </div>
+                        <div><a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-1" role="button"
+                            data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-1" data-slide-to="4"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center">Combining the old and the new, TwitterMaze invites players to navigate the twists and turns of the most popular tweets in the USA!</p>
+                    <p class="text-center">Created in concert with Danny Burrow, the tweet in question is pulled live from a randomly generated list. It is then embedded into a maze using a homespun algorithm. Finally, players are able to navigate through the maze in a Curses
+                        based front-end for the Terminal.</p>
+                    <p class="text-center">Check out the code on github <a href="https://github.com/awarnes/twitter_maze" target="_blank">here </a>!</p>
+                    <p class="text-center">Languages and Features:&nbsp;<strong>Python, Tweepy, Curses, Twitter API </strong>Date: <strong>February 2017</strong> Service: <strong>CLI Development and API Integration</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">AWARNES </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
+                    <li role="presentation"><a href="#about-section">ABOUT </a></li>
+                    <li role="presentation"><a href="#projects-section">PROJECTS </a></li>
+                    <li role="presentation"><a href="#contact">LET'S TALK</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
     <header>
-        <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-xs-12">
-                        <img class="img-thumbnail img-circle" id="profile-pic" src="img/facebook_headshot_small.JPG" alt="Alex!">
-                    </div>
-                    <div class="intro-text">
-                        <h1 class="name">Alex Warnes</h1>
-                        <hr class="">
-                        <span class="skills">Python - Django - JavaScript - React</span>
-                    </div>
-                </div>
-            </div>
+        <div style="background-repeat:no-repeat;background-size:cover;background-image:url(&quot;assets/img/backgrounds/new-intro-bg.jpg&quot;);">
+            <h1 class="text-center" data-bs-hover-animate="pulse">Alexander Warnes</h1>
+            <hr style="width:45%;">
+            <h3 class="text-center" style="padding-bottom:99px;">Python - Django - JavaScript - React</h3>
+            <p class="text-center" style="font-size:100px;padding-top:207px;"><a href="#about-section" style="color:rgb(221,233,239);"><i class="fa fa-angle-double-down" data-bs-hover-animate="rubberBand" style="color:rgb(211,205,205);"></i></a></p>
         </div>
     </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
+    <section id="main" style="background-color:rgb(34,34,34);">
+        <div id="about-section" style="background-color:rgb(34,34,34);padding-top:50px;">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#csmModal" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <div class="col-xs-12">
+                    <h1 class="text-center" style="color:rgb(211,205,205);">ABOUT AWARNES</h1>
+                    <div class="row vcenter">
+                        <div class="col-md-offset-0 col-sm-6 col-xs-12"><img class="img-circle img-responsive" src="facebook_headshot_small.jpg" alt="alex!" width="100%" id="profile-picture"></div>
+                        <div class="col-sm-6 col-xs-12 vcenter" style="color:rgb(211,205,205);">
+                            <p class="lead text-center" style="width:100%;color:rgb(211,205,205);overflow-y:auto;">This is where some about me text will go....</p>
                         </div>
-                        <!-- Temp Logo... -->
-                        <img src="img/csm-logo.png" class="img-responsive img-rounded" alt="CSM-Logo">
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#a-frameModal" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item" id="codewars-open">
-                    <a href="#codewarsModal" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/codewars-logo.png" class="img-responsive img-rounded" alt="codewars-logo">
-                    </a>
+                <div class="col-md-12">
+                    <p class="text-center" style="font-size:100px;width:100%;height:100%;margin-bottom:0px;"><a href="#projects-section" style="color:rgb(221,233,239);"><i class="fa fa-angle-double-down" data-bs-hover-animate="rubberBand" style="color:rgb(211,205,205);"></i></a></p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
+        <div id="projects-section" style="background-color:rgb(34,34,34);padding-top:50px;">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Awarnes</h2>
-                    <hr class="">
-                </div>
+                <div class="col-md-12">
+                    <h1 class="text-center" style="color:rgb(211,205,205);">PROJECTS </h1></div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>I have been programming since I was 12, hacking away at things like Python, the TI-83, and various basic drag-and-drop programming languages. However, the drives of life took over, and programming of most any kind fell by the wayside.
-                    Until, the end of 2016 that is.</p>
-                    <p>By that point, the allure of the financial services industry had worn off and it was time for something different. Once again the world of programming beckoned....</p>
-                    <p>I quit my job, enrolled in the Full Stack Python Developer Bootcamp with PDX Code Guild, and haven't looked back since.</p>
-                    <p>Having recently graduated from the bootcamp I am moving on to a class in React and beginning to look for work as a developer.</p>
-                    <p>The future is still wide open with plenty of excitement to come!</p>
-                </div>
-                <!--<div>-->
-                    <!--<a href="#projects" class="btn btn-circle page-scroll">-->
-                              <!--<i class="fa fa-angle-double-down animated"></i>-->
-                    <!--</a>-->
-                <!--</div>-->
+            <div class="row" style="margin-right:0px;margin-left:0px;">
+                <div class="col-md-6 col-xs-12 text-center" style="margin-top:10px;"><img class="img-rounded img-responsive project-image" src="assets/img/CSM/csm-logo.png" data-bs-hover-animate="pulse" data-target="#csmModal" style="width:100%;height:400px;"></div>
+                <div class="col-md-6 col-xs-12 text-center" style="height:400px;margin-top:10px;"><img class="img-rounded img-responsive project-image" src="assets/img/TwitterMaze/twitter-maze-logo.png" data-bs-hover-animate="pulse" style="width:100%;height:100%;" data-target="#cursesModal"></div>
+                <div class="col-md-6 col-xs-12 text-center" style="margin-top:10px;"><img class="img-rounded img-responsive" src="assets/img/other projects/deck.png" style="width:100%;height:400px;"></div>
+                <div class="col-md-6 col-xs-12 text-center" style="margin-top:10px;"><img class="img-rounded img-responsive" src="assets/img/other projects/poca.png" data-bs-hover-animate="pulse" style="width:100%;height:400px;"></div>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
+        <div id="contact" style="background-color:rgb(34,34,34);margin-top:50px;padding-top:60px;color:rgb(211,205,205);">
+            <h1 class="text-center" style="margin-top:0px;color:rgb(211,205,205);">Let's Talk!</h1>
+            <p class="text-center" style="color:rgb(211,205,205);">Let me know what's on your mind!</p>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Let's Talk!</h2>
-                    <hr class="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                <div class="col-lg-offset-1 col-xs-10" style="display:flex;justify-content:center;">
+                    <form action="http://formspree.io/bcbecgchdjdneqerfsftgxgzhbhcie@gmail.com" method="post" target="_self" style="width:75%;">
+                        <div class="form-group">
+                            <label class="control-label" for="name-input" style="color:rgb(211,205,205);">Name *</label>
+                            <input class="form-control" type="text" id="name-input" name="name" required="">
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email-input" style="color:rgb(211,205,205);">Email *</label>
+                            <input class="form-control" type="email" id="email-input" name="email" required="">
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        <div class="form-group">
+                            <label class="control-label" for="subject-input" style="color:rgb(211,205,205);">Subject</label>
+                            <input class="form-control" type="text" id="subject-input" name="subject">
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        <div class="form-group">
+                            <label class="control-label" for="message-input" style="color:rgb(211,205,205);">Message *</label>
+                            <textarea class="form-control" id="message-input" name="message" required=""></textarea>
                         </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
+                        <input class="form-control" type="hidden" name="_next" value="http://127.0.0.1:59679/?#contact">
+                        <div class="col-md-12" id="form-buttons">
+                            <button class="btn btn-default btn-lg" type="submit" id="submit-email" target="blank">Send! </button>
+                            <button class="btn btn-default btn-lg" type="button">Reset </button>
                         </div>
+                        <input class="form-control" type="text" name="_gotcha" style="display:none">
+                        <p class="text-center">Powered by <a href="https://www.formspree.io" target="_blank">formspree.io </a></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Portland, OR
-                            </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <!--<li>-->
-                                <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>-->
-                            <!--</li>-->
-                            <li>
-                                <a href="https://www.linkedin.com/in/alexanderwarnes/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.github.com/awarnes" class="btn-social btn-outline"><span class="sr-only">GitHub</span><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--<div class="footer-col col-md-4">-->
-                        <!--<h3>About Freelancer</h3>-->
-                        <!--<p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>-->
-                    <!--</div>-->
-                </div>
+    <footer style="background-color:rgb(34,34,34);color:rgb(211,205,205);padding-top:35px;">
+        <div class="row vcenter">
+            <div class="col-md-6 col-sm-push-6 col-xs-12">
+                <h1 class="text-center">awarnes around the world</h1>
+                <p class="text-center" style="font-size:18px;padding-top:15px;">I currently live in Portland, Oregon where I've grown my programming abilities thanks in part to our abundant liquid sunshine.<span class="sr-only">/s </span></p>
+                <p class="text-center" style="font-size:18px;">For most of my life I grew up in Salem, Oregon. However, I did spend time as a child in both Boston, Massachusetts and Melbourne, Australia.</p>
+                <p class="text-center" style="color:rgb(211,205,205);font-size:18px;">And, after graduating from Lewis &amp; Clark College I spent two years teaching English in Ulsan, South Korea.</p>
+                <h1 class="text-center">awarnes around the web</h1>
+                <p class="text-center" style="font-size:18px;padding-top:15px;">Check out my projects on Github, send me a message on LinkedIn, or check out my answers on StackOverflow!</p>
+                <div id="social-icons" style="padding-top:25px;"><a href="https://github.com/awarnes" target="_blank" data-bs-hover-animate="swing" style="color:rgb(211,205,205);"><i class="fa fa-github" style="font-size:90px;"></i></a><a href="https://www.linkedin.com/in/alexanderwarnes/" target="_blank"
+                    data-bs-hover-animate="wobble" style="color:rgb(211,205,205);" hover="color:rgb(41,41,41)"><i class="fa fa-linkedin" style="font-size:90px;" hover="color: rgb(41,41,41)"></i></a><a href="https://stackoverflow.com/users/7381314/awarnes"
+                    target="_blank" data-bs-hover-animate="swing" style="color:rgb(211,205,205);"><i class="fa fa-stack-overflow" style="font-size:90px;"></i></a></div>
+            </div>
+            <div class="col-md-6 col-sm-pull-6 col-xs-12">
+                <div id="map-location" style="width:100%;height:800px;background-color:rgb(34,34,34);background-image:url(&quot;giphy.gif&quot;);background-repeat:no-repeat;background-size:contain;background-position:center;"></div>
             </div>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; awarnes 2017
-                    </div>
-                </div>
-            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">awarnes © 2017</h4></div>
         </div>
     </footer>
+    <script type="text/javascript">
+    "use strict";
+    
+    const pastMarkers = [
+            {lat: 44.9429, lng: -123.0351},
+            {lat: 35.5384, lng: 129.3114},
+            {lat: -37.8136, lng: 144.9631},
+            {lat: 42.3601, lng: -71.0589},
+        ]
+    
+    function initMap() {
+        const home = {lat: 45.512794, lng: -122.679565}
+        
+        const center = {lat: 24.175553, lng: -151.700314}
+        
+        const map = new google.maps.Map(document.getElementById('map-location'), {
+            zoom: 2,
+            center: center,
+        })
+        
+        const homeMarker = new google.maps.Marker({
+            position: home,
+            map: map,
+            
+        })
+        
+        pastMarkers.forEach((location) => {
+                let marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                })
+            })
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="csmModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>5E Character Sheet Manager</h2>
-                            <hr class="star-primary">
-                            <img src="img/csm-logo.png" class="img-responsive img-rounded img-centered" alt="">
-                            <p>The 5th Edition Character Sheet Manager is a pet project whose aim is to take the pain out of Dungeons & Dragons, while still affording the player all of the creativity that the game is based on.</p>
-                            <p>The 5E CSM is built in Django with a bed of Python, and plenty of JavaScript and JQuery to interact with the database through a built-in REST-ful API.</p>
-                            <p>Check out the code on github <a href="https://github.com/awarnes/5E-Character">here</a>!</p>
-                            <ul class="list-inline item-details">
-                                <li>Languages and Features:
-                                    <strong>Django, Python, JS, JQ, RESTful API
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2017
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="a-frameModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>A-Frame</h2>
-                            <hr class="star-primary">
-                            <div class="well-lg">
-                                <iframe style="width: 95%; height: 25em;" src="./360-viewer.html"></iframe>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="codewarsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Code Wars</h2>
-                            <hr class="star-primary">
-                            <img src="img/codewars-logo.png" class="img-responsive img-centered" alt="">
-                            <p>Current Codewars Rank</p>
-                            <p>**Under Construction**</p>
-                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-    <!-- Addition JavaScript -->
-    <script src="js/codewars_user.js"></script>
-
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR36_KfzN_brYkTS8Z1s55dzZ35meRA0A&callback=initMap">
+</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/modal-toggles.js"></script>
 </body>
 
 </html>
