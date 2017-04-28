@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new-bio</title>
+    <title>awarnes</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -296,16 +296,16 @@
     </footer>
     <script type="text/javascript">
     "use strict";
-    
+
     // Will be adding in InfoWindows at a later date, keeping some practice code for now.
-    
+
     const pastMarkers = [
             {infoId: 's', loc: {lat: 44.9429, lng: -123.0351}, icon: './assets/img/map-icons/nursery.png'},
             {infoId: 'u', loc: {lat: 35.5384, lng: 129.3114}, icon: './assets/img/map-icons/university.png'},
             {infoId: 'm', loc: {lat: -37.8136, lng: 144.9631}, icon: './assets/img/map-icons/kangaroo2.png'},
             {infoId: 'b', loc: {lat: 42.3601, lng: -71.0589}, icon: './assets/img/map-icons/bigcity.png'},
         ]
-    
+
     // const infoWindowContent = [
     //     {id: 'p', name: "Portland, OR", time: "2006-2011, 2013-Present", desc: ""},
     //     {id: 's', name: "Salem, OR", time: "off and on 1988-2006", desc: ""},
@@ -314,17 +314,17 @@
     //     {id: 'b', name: "Boston, MA", time: "1994-1995", desc: ""},
     // ]
     // let infoWindows = {}
-    
+
     function initMap() {
         const home = {lat: 45.512794, lng: -122.679565}
-        
+
         const center = {lat: 24.175553, lng: -151.700314}
-        
+
         const map = new google.maps.Map(document.getElementById('map-location'), {
             zoom: 2,
             center: center,
         })
-        
+
 //         infoWindowContent.forEach((data) => {
 //             let contentString = '<div id="content">'+
 //                                     '<div id="siteNotice">'+
@@ -336,7 +336,7 @@
 //                                         '<p>' + data.desc + '</p>' +
 //                                     '</div>'+
 //                                 '</div>'
-            
+
 //             let tempInfoWindow = new google.maps.InfoWindow({
 //                 content: contentString
 //                 })
@@ -344,24 +344,24 @@
 //             infoWindows = Object.assign(infoWindows, {[key]: tempInfoWindow})
 
 //         })
-        
+
         const homeMarker = new google.maps.Marker({
             position: home,
             map: map,
             icon: './assets/img/map-icons/villa.png',
         })
-        
+
         // homeMarker.addListener('click', () => {
         //     infoWindows.p.open(map, homeMarker)
         // })
-        
+
         pastMarkers.forEach((location) => {
                 let marker = new google.maps.Marker({
                     position: location.loc,
                     map: map,
                     icon: location.icon,
                 })
-                
+
                 // marker.addListener('click', (marker) => {
                 //     infoWindows.location.infoId.open(map, marker)
                 // })
