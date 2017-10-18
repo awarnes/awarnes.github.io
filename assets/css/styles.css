@@ -1,0 +1,89 @@
+@media (max-width:991px) {
+  header > div {
+    height:580px;
+  }
+}
+
+@media (max-width:767px) {
+  header > div {
+    height:580px;
+    width:100%;
+  }
+}
+
+@media (max-width:1199px) {
+  header > div {
+    height:1000px;
+    width:100%;
+  }
+}
+
+@media (min-width:1200px) {
+  header > div {
+    height:1000px;
+    width:100%;
+  }
+}
+
+header > div {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding-top:60px;
+}
+
+.project-column {
+  display:flex;
+  justify-content:space-around;
+}
+
+#form-buttons {
+  display:flex;
+  justify-content:space-around;
+}
+
+#social-icons {
+  display:flex;
+  justify-content:space-around;
+}
+
+@media (max-width:600px) {
+  #map-location {
+    height:300px;
+  }
+}
+
+@media (max-width:767px) {
+  #profile-picture {
+    display:none;
+  }
+}
+
+@media (min-width:768px) {
+  .vcenter {
+    display:flex;
+    align-items:center;
+  }
+}
+
+.modal-header {
+  background-color:rgb(34,34,34);
+  color:rgb(211,205,205);
+}
+
+.modal-body {
+  background-color:rgb(34,34,34);
+  color:rgb(211,205,205);
+}
+
+.modal-footer {
+  background-color:rgb(34,34,34);
+  color:rgb(211,205,205);
+}
+
+@media (min-width:1200px) {
+  #profile-picture {
+    margin-left:100px;
+  }
+}
+
