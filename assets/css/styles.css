@@ -88,9 +88,17 @@ header > div {
 }
 
 .lightBlue {
-  color: #90AFC5
+  color: #555cc7
 }
 
 .darkBlue {
-  color: #336B87
+  color: #023d5b
+}
+
+.largeFont {
+  font-size: 24px;
+}
+
+.mediumFont {
+  font-size: 20px;
 }
