@@ -1,0 +1,39 @@
+{% include header.html %}
+
+    {% include home-hero.html %}
+
+    <main id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            {% for category in site.categories %}
+              <h2 class="section-title text-center">
+                Some of my favorite personal projects include:
+              </h2>
+              <div class="break"></div>
+              <div class="wow fadeIn">
+                {% if category[0] == "development" %}
+                  {% for post in category[1] %}
+                    {% if post.type == "left" %}
+                      {% include content-left.html %}
+                    {% endif %}
+
+                    {% if post.type == "right" %}
+                      {% include content-right.html %}
+                    {% endif %}
+
+                    {% if post.type == "no-image" %}
+                      {% include content-no-image.html %}
+                    {% endif %}
+                {% endfor %}
+              {% endif %}
+              </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+{% include footer.html %}
