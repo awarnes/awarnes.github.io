@@ -9,5 +9,6 @@ featured_image: img/posts/twitter_maze_game.png
 project_link: 'http://github.com/awarnes/twitter_maze'
 project_button_icon: 'github'
 project_button_text: 'Visit Project'
+website_link: ''
 lead_text: 'A command line game that has users guess randomized tweets from Twitter.'
 ---
