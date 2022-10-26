@@ -4,7 +4,11 @@
   <p class="excerpt">{{ post.lead_text }}</p>
 
   {% if post.project_link != empty %}
-  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.project_button_icon}} fa-lg"></i>{{post.project_button_text}}</button></a>
+  {% endif %}
+
+  {% if post.website_link != empty %}
+  <a href="{{ post.website_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa-solid fa-arrow-up-right-from-square"></i>{{post.website_text}}</button></a>
   {% endif %}
 
   {% if post.tags != empty %}
